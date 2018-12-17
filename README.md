@@ -51,6 +51,7 @@ mpirun -n 20 som_linux -c <file> -o <file> -i <input>
 We have two version:
 
 Version 1:
+
 At the first line is configuration and each record contains all the data in the dimension.
 
 ```
