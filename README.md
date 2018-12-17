@@ -40,7 +40,29 @@ mpirun -n 20 som_linux -c <file> -o <file> -i <input>
 ```
 >Hybrid learning is described [here](https://www.scopus.com/record/display.uri?eid=2-s2.0-84959217069&origin=resultslist&sort=plf-f&src=s&sid=a17258611de1fb30fefc2aeb51f1fa5d&sot=autdocs&sdt=autdocs&sl=18&s=AU-ID%2853985639600%29&relpos=4&citeCnt=2&searchTerm=)
 
+
+**Configuration file example**
+
+`<x dimension>  <y dimension> <number of iteration> <number of input records> <default name of output files> <version>`
+
+
 **Input file example**
+
+We have two version:
+
+Version 1:
+At the first line is configuration and each record contains all the data in the dimension.
+
+```
+15 15 98 4 Test 0
+#
+0.222222222 0.625 0.06779661 0.041666667
+0.166666667 0.416666667 0.06779661 0.041666667
+....
+#
+```
+
+Verison 2:
 
 Each record is on a separate line. 
 
@@ -52,18 +74,10 @@ Each record is on a separate line.
 0:0.083333333 1:0.458333333 2:0.084745763 3:0.041666667
 ```
 
-**Configuration file example**
-
-`<x dimension>  <y dimension> <number of iteration> <number of input records> <default name of output files> <version>`
-
 **Output file example**
 
-Each record describes one neuron.
-
-```
-0:<value> 1:<value> ... 
-0:<value> 1:<value> ... 
-```
+The map is save in binary format. 
+`<position x> <position y> <weight of neuron>`
 
 ## Acknowledgement
 This work was supported by The Ministry of Education, Youth and Sports from the National Programme of Sustainability (NPU II) project ‘IT4Innovations excellence in science - LQ1602’.
