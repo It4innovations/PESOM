@@ -61,6 +61,7 @@ Each record is on a separate line.
 Each record describes one neuron.
 
 `0:<value> 1:<value> ... `
+`0:<value> 1:<value> ... `
 
 ## Acknowledgement
 This work was supported by The Ministry of Education, Youth and Sports from the National Programme of Sustainability (NPU II) project ‘IT4Innovations excellence in science - LQ1602’.
