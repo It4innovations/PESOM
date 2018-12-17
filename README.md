@@ -62,6 +62,8 @@ Each record describes one neuron.
 
 `0:<value> 1:<value> ... `
 
-# Licence
+## Acknowledgement
+This work was supported by The Ministry of Education, Youth and Sports from the National Programme of Sustainability (NPU II) project ‘IT4Innovations excellence in science - LQ1602’.
 
-See the LICENSE file at the root directory.
+## LICENSE
+This implementation of the Betweenness algorithm is licensed under the [New BSD License](LICENSE.md).
