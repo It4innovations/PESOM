@@ -16,6 +16,9 @@ The code has been developed and optimized for the [IT4Innovations Salomon cluste
 
 After successfull compilation the `run` directory should contain one executable 'som_linux'.
 
+# for Mac
+OPTIONS = -I /opt/homebrew/Cellar/libomp/12.0.0/include/ -L /opt/homebrew/Cellar/libomp/12.0.0/lib -O3 -Wall -std=c++0x -pthread -Xpreprocessor -fopenmp -lomp# -g for debug, -O2 for optimise and -Wall additional messages
+
 ## Usage
 
 mpirun -n 20 som_linux -c <file> -o <file> -i <input>
